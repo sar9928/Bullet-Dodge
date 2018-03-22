@@ -160,9 +160,21 @@ function setBoundaries(){
     }
 }
 
+function hitDetection (){
+    // enemy damage
+    if (bullet.x > enemy.x && bullet.x < (enemy.x + 30) && bullet.y > enemy.y && bullet.y < (enemy.y + 80)) {
+        laserSound.play();
+    }
+    // player damage
+    if (ebullet.x > player.x && ebullet.x < (player.x + 30) && ebullet.y > player.y && ebullet.y < (player.y + 80)) {
+        laserSound.play();
+    }
+}
+
 function updateGameArena() {
     Arena.clear();
     setBoundaries();
+    hitDetection();
     player.speedX = 0;
     player.speedY = 0;
     enemy.speedX = 0;
