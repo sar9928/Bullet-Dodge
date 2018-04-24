@@ -1,0 +1,64 @@
+body {
+        background: #a2a5aa;
+      }
+header{
+        margin: auto;
+        text-align: center;
+        font-size: 55px;
+        color: #d5d815;
+        text-shadow: 2px 2px 0 red;
+      }
+canvas {
+    background:url('../media/court.png');
+       }
+
+#audioControls {
+    display: none;
+}
+#health {
+        position: absolute;
+        top: 780px;
+        left: 100px;
+        background: yellow;
+        color: blue;
+        
+}
+#health::-webkit-progress-value {
+  background: lightblue;
+}
+
+#health::-moz-progress-bar {
+  background: lightcolor;
+}
+
+#health::-webkit-progress-value {
+  background: red;
+}
+
+#health::-webkit-progress-bar {
+  background: black;
+}
+
+#ehealth {
+        position: absolute;
+        top: 780px;
+        left: 1645px;
+        background: yellow;
+        color: blue;
+        
+}
+#ehealth::-webkit-progress-value {
+  background: lightblue;
+}
+
+#ehealth::-moz-progress-bar {
+  background: lightcolor;
+}
+
+#ehealth::-webkit-progress-value {
+  background: red;
+}
+
+#ehealth::-webkit-progress-bar {
+  background: black;
+}
